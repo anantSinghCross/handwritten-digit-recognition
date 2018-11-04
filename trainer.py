@@ -61,7 +61,7 @@ model = baseline_model()
 # fitting the simple neural network model
 model.fit(X_train, Y_train, validation_data = (X_test,Y_test),epochs = 10, batch_size = 200, verbose = 1)
 scores = model.evaluate(X_test, Y_test, verbose = 1)
-print("Baseline Error: %.2f%", (100-scores[1]*100))
+print("Baseline Error: %.2f", (100-scores[1]*100))
 
 # now we'll save the keras model just so that we can use it
 # whenever we want without the need to retrain it.
