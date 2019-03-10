@@ -11,9 +11,11 @@ this project in the near future.
 ### Sample of Images You Are Dealing With
 
 * First image in the dataset
+
 ![first.jpg](first.jpg)
 
 * Second image in the dataset
+
 ![second.jpg](second.jpg)
 
 ***
@@ -32,7 +34,6 @@ this project in the near future.
 When you run the program using `python trainer.py` you should see the following if you already have the above libraries installed.
 
 * Output
-
 
 ![output.jpg](output.jpg)
 
