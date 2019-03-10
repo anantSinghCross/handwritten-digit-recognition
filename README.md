@@ -32,6 +32,8 @@ this project in the near future.
 When you run the program using `python trainer.py` you should see the following if you already have the above libraries installed.
 
 * Output
+
+
 ![output.jpg](output.jpg)
 
 ***
