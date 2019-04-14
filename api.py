@@ -40,7 +40,7 @@ def make_predictions():
         # predict the number
         with graph.as_default():
             pred = loaded_model.predict_classes(pic)
-            return flask.render_template('predict.html' , response = pred)
+            return flask.render_template('predict.html' , response = pred[0])
     
     return render_template('index.html')
     

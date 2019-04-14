@@ -4,15 +4,29 @@
 	    <title>Handwritten Digit Recognition</title>
 	    <meta charset="UTF-8">
 	  	<meta name="viewport" content="width=device-width,initial-scale=1">
-	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	  	<style>
+	  		body
+	  		{
+	  			margin: 0;
+	  			padding: 0;
+	  		}
+	  		.inputBox
+	  		{background-color: #edd9c0;
+	  			display: grid;
+	  			place-items:center;
+	  			height: 100vh;
+	  			width: 100vw;
+	  		}
+	  		
 	  	</style>
 	</head>
 	<body>
-		<form method="post" action="/predict" enctype="multipart/form-data">
-			<label for="file">Choose an image to upload </label>
-	  		<input type="file" name="image" accept=".jpg,.png">
-	  		<input type="submit" name="submit">
-		</form>
+		<div class="inputBox">
+			<form method="post" action="/predict" enctype="multipart/form-data">
+				<label for="file">Choose an image to upload </label>
+		  		<input type="file" name="image" accept=".jpg,.png">
+		  		<input type="submit" name="submit" value="Predict">
+			</form>
+		</div>
   	</body>
 </html>
