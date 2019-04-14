@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+	    <title>Handwritten Digit Recognition</title>
+	    <meta charset="UTF-8">
+	  	<meta name="viewport" content="width=device-width,initial-scale=1">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  	<style>
+	  	</style>
+	</head>
+	<body>
+		<form method="post" action="/predict" enctype="multipart/form-data">
+			<label for="file">Choose an image to upload </label>
+	  		<input type="file" name="image" accept=".jpg,.png">
+	  		<input type="submit" name="submit">
+		</form>
+  	</body>
+</html>

@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 seed = 7
 np.random.seed(seed)
 
-# just for the spyder console window to displa all tuples and cols
+# just for the spyder console window to display all tuples and cols
 pd.options.display.max_columns = 100
 pd.options.display.max_rows = 100
 
@@ -47,7 +47,7 @@ print('Number of categories: ',Y_test.shape[1])
 num_categories = Y_test.shape[1]
 
 # now we'll define a function where we create a Sequential model
-# we'll be building a fairly simple model for this porblem
+# we'll be building a fairly simple model for this problem
 def baseline_model():
     model = Sequential()
     model.add(Dense(num_pixels , input_dim = num_pixels , kernel_initializer = 'normal' , activation = 'relu'))
